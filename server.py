@@ -11,13 +11,13 @@ app = Flask(__name__)
 
 DEBUG = os.environ.get('DEBUG', True)
 app.debug = DEBUG
-app.secret_key = 'a9f3ab10-a345-11e4-89d3-123b93f75cba'
+app.secret_key = ''
 
-DROPBOX_APP_KEY = 'alb0kf2mp7ca1np'
-DROPBOX_APP_SECRET = '1d06iyf5ixv9y54'
+DROPBOX_APP_KEY = ''
+DROPBOX_APP_SECRET = ''
 DROPBOX_PATH_REGEX = re.compile('.*?view/.*?/(.*)')
 
-GOD_CLIENT = DropboxClient('qRrmAkXDDlQAAAAAAAAJTo3vU5u627YKYUwHUzTQ2t48OiJvdPHsg5dHF5HS1KyZ')
+GOD_CLIENT = DropboxClient('')
 GOD_PATH = 'DBHACK/'
 GOD_DS_MAN =  DatastoreManager(GOD_CLIENT)
 GOD_DS = GOD_DS_MAN.open_default_datastore()
